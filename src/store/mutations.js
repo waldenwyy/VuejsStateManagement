@@ -1,6 +1,6 @@
 export default {
   ADD_CONTACT: (state, contact) => {
-    state.contacts.push(contact);
+    state.contacts = [...state.contacts, contact]
   },
 
   EDIT_CONTACT: (state, contact) => {
@@ -12,6 +12,6 @@ export default {
   },
 
   REMOVE_CONTACT: (state, index) => {
-    state.contacts.splice(index, 1);
+    state.contacts = state.contacts.filter((contact, contactIndex) => contactIndex !== index);
   }
 };
