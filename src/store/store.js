@@ -8,7 +8,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    title: 'FunnelCloud Contact Form',
+    title: 'iCloud Contact Form',
     editIndex: null,
     contacts: [{
       fname: 'Walden',
